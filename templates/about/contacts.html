@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+                <img src={% static "images/comtact-info.png.crdownload" %} alt="" width="100%">
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="text">
+                    <div class="text_p"><p><h2>Контакты:</h2></p></div>
+
+                    <div class="text_p">
+                        <h5>Коммерческий отдел</h5>
+                        <p><a class = "nav_tel_link" href="tel: ++7(495)-786-43-67">+7(495)-786-43-67</a> (WhatsApp, Telegram)</p>
+                        <p>Приём заявок с 9:00 до 19:00</p>
+                    </div>
+
+                    <div class="text_p">
+                        <h5>Адрес</h5>
+                        <p>Москва, 109429, Большая Спасская улица, д 35</p>
+                    </div>
+
+                    <div class="text_p">
+                        <h5>Реквизиты компании</h5>
+                        <p>
+                            ИНН: 111111 <br>
+                            Банк: Сбербанк
+                        </p>
+                    </div>
+
+                    <div class="text_p">
+                        <h5>Обратная связь</h5>
+                    </div>
+
+                    <div class="form">
+                        <form action="#" width="70%">
+                            <input type="text" class="form_control input-lg" placeholder="ФИО" style="width: 100%;">
+                            <input type="text" class="form_control input-lg" placeholder="Телефон" style="width: 100%;">
+                            <input type="text" class="form_control input-lg" placeholder="e-mail" style="width: 100%;">
+                            <input type="text" class="form_control input-lg" placeholder="Ваше сообщение" style="width: 100%;">
+                            <button class="btn btn-primary form_btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="top"></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        function ToTop(){
+            let button = $('.top');
+            $(window).on('scroll', () => {
+                if ($(this).scrollTop() >= 70){
+                    button.fadeIn();
+                } else {
+                    button.fadeOut();
+                }
+            });
+
+            button.on('click', (e) => {
+                e.preventDefault();
+                $('html').animate({scrollTop: 0}, 100);
+            })
+        }
+        ToTop();
+    </script>
+</body>
+{% endblock %}

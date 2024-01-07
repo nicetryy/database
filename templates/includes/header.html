@@ -1,0 +1,21 @@
+{% load static %}
+<div class="header">
+    <div class="container">
+        <div class="row">
+
+            <div class=" col-lg-3 col-sm-3">
+                <a href="{% url 'about:map' %}"><img src={% static "images/gorizont-test-logo-transformed.png" %} alt="gorizont_company" width="100%"></a>
+            </div>
+            
+            <div class="col-lg-6 offset-lg-3 col-sm-7 offset-sm-2 ">
+                <div class="nav">
+                    <a class="nav_link" href="{% url 'about:information' %}">О нас</a>
+                    <a class="nav_link" href="{% url 'catalog:production' %}">Услуги</a>
+                    <a class="nav_link" href="{% url 'about:factory' %}">Статьи</a>
+                    <a class="nav_link" href="{% url 'about:contacts' %}">Контакты</a>
+                    <a class="nav_link_t" href="{% url 'about:map' %}"><img src={% static "images/map.png" %} alt="" title="Карта сайта" width="30px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="text">
+                    <p><h2>Виды деятельности
+                    </h2></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 col-sm-12">
+                <div class="text">
+                    <p><h4>Весь комплекс дорожного строительства, мосты и путепроводы,  инженерные коммуникации – водопровод, канализация, теплоснабжение, энергетические сети, гражданское строительство.</h4></p>
+                    <p>Компания выполняет функции заказчика, генерального подрядчика и инвестора.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-sm-12">
+                <div class="text">
+                    <p>Хорошо зарекомендовав себя на строительном рынке, мы приняли участие в таких значимых объектах как:
+
+                        Работы по реконструкции магистральных сетей для жилых домов квартала 1296;
+                        
+                         Строительство проектируемого проезда 6021 с выносом инженерных коммуникаций;
+                        
+                         Строительство двух 8-этажных жилых домов в г. Химки;
+                        
+                         Строительство инженерных сетей для спортивно – жилого комплекса:
+                        
+                        “Олимпийская деревня”;
+                        
+                         Строительство Коллектора ливневой канализации в г. Люберц;
+                        
+                         Строительство инженерных сетей и для здания Императорского Православного Палестинского Общества;
+                        
+                         Строительство инженерных сетей для здания по адресу Неженская д. 14;
+                        
+                         Строительство катка по адресу Молостовых д. 10
+                        
+                         и многие другие.
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="production-slider">
+                    <div class="ayran-img">
+                        <img src={% static "images/fundament-doma.jpg" %} alt="Сооружение различных фундаментов" width="85%" class="image">
+                    </div>
+                    <div class="ayran-img">
+                        <img src={% static "images/fundament-mosta.jpg" %} alt="Сооружение различных фундаментов" width="85%" class="image">
+                    </div>
+                </div>
+                <div class="text_under"><h4>Сооружение различных фундаментов</h4></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <img src={% static "images/ustr-polotna.jpg" %} alt="" width="72.5%" class="image">
+                <div class="text_under"><h4>Устройство дорожного полотна</h4></div>
+            </div>
+            <div class="col-lg-4 offset-lg-0 col-sm-6 offset-sm-3">
+                <div class="production-slider">
+                    <div class="smoothie-img">
+                        <img src={% static "images/vodoprovod.jpg.crdownload" %} alt="водопровод" width="100%" class="image">
+                    </div>
+                    <div class="smoothie-img">
+                        <img src={% static "images/otoplenie.jpeg" %} alt="Отопление" width="100%" class="image">
+                    </div>
+                    <div class="smoothie-img">
+                        <img src={% static "images/cabel.png" %} alt="Кабель" width="100%" class="image">
+                    </div>
+                </div>
+                
+                <div class="text_under"><h4>Прокладка различных сетей: водопроводдной, отопительной, кабельной</h4></div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <div class="text">
+                    <p><h2>Местоположение работ</h2></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <div class="text">
+                    <p>Наша компания способна выполнять заказы в Москве (в т.ч. Зеленограде) и таких подмосковных городах как: Долгопрудный, Химки, Подольск, Королёв и Электросталь. При необходимсти возможно договориьться на оказание нами услуг и в других городах.</p>
+                </div>
+            </div>
+
+            <div class="col-6 offset-1">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afcefae433b3c08c46926ccdefce84fbd6cab28b01d6b7501c9cd11ca0e06958d&amp;width=600&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 col-sm-12">
+                <div class="text_under">
+                    <p><h5>Контактная информация:</h5></p>
+                    <p><a class = "nav_tel_link" href="tel: +7(495)-786-43-67">+7(495)-786-43-67</a> (WhatsApp, Telegram)</p>
+                    <p>gorizont-company@outlook.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1 col-sm-12">
+                <div class="text_under">
+                    <p><h5>Юридический адрес</h5></p>
+                    <p>Москва, 109429, Большая Спасская улица, д 35</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="top"></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        function ToTop(){
+            let button = $('.top');
+            $(window).on('scroll', () => {
+                if ($(this).scrollTop() >= 70){
+                    button.fadeIn();
+                } else {
+                    button.fadeOut();
+                }
+            });
+
+            button.on('click', (e) => {
+                e.preventDefault();
+                $('html').animate({scrollTop: 0}, 100);
+            })
+        }
+        ToTop();
+    </script>
+</body>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+                <a href="{% url 'about:map' %}" title="Главная">
+                    <img src={% static "images/pngwing.com.png" %} alt="Долина молока" width="90%">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1">
+                <a class="text_under" href="{% url 'about:information' %}"><h2>О нас</h2></a>
+                <div class="text_under">
+                    <p><h4>Чем мы занимаемся</h4></p>
+                    <p><h4>Наши партнёры</h4></p>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1">
+                <a class="text_under" href="{% url 'catalog:production' %}"><h2>Услуги</h2></a>
+                <div class="text_under">
+                    <p><h4>Виды деятельности</h4></p>
+                    <p><h4>Местоположение работ</h4></p>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1">
+                <a class="text_under" href="{% url 'about:factory' %}"><h2>Статьи</h2></a>
+                <div class="text_under">
+                    <p><h4>Будущее хранения энергии</h4></p>
+                    <p><h4>Новые перспективы</h4></p>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1">
+                <a class="text_under" href="{% url 'about:contacts' %}"><h2>Контакты</h2></a>
+                <div class="text_under">
+                    <p><h4>Контакты</h4></p>
+                    <p><h4>Обратная связь</h4></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-sm-12">
+                <div class="text_under">
+                    <p><h5>Контактная информация:</h5></p>
+                    <p><a class = "nav_tel_link" href="tel: ++7(495)-786-43-67">+7(495)-786-43-67</a> (WhatsApp, Telegram)</p>
+                    <p>gorizont-company@outlook.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1 col-sm-12">
+                <div class="text_under">
+                    <p><h5>Юридический адрес</h5></p>
+                    <p>Москва, 109429, Большая Спасская улица, д 35</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="top"></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        function ToTop(){
+            let button = $('.top');
+            $(window).on('scroll', () => {
+                if ($(this).scrollTop() >= 70){
+                    button.fadeIn();
+                } else {
+                    button.fadeOut();
+                }
+            });
+
+            button.on('click', (e) => {
+                e.preventDefault();
+                $('html').animate({scrollTop: 0}, 100);
+            })
+        }
+        ToTop();
+    </script>
+</body>
+{% endblock %}

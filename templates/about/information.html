@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-5">
+                <div class="text">
+                    <p><h2>Чем мы занимаемся</h2></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="text">
+                    <p><h4>Общество с ограниченной ответственностью «ГОРИЗОНТ» основано в результате реорганизации в марте 2007 года и объединяет группу профессионалов с многолетним опытом работы в области строительства. </h4></p>
+                    <p>Численность сотрудников на данный момент превышает 200 человек.
+
+                        Компания специализируется на выполнении работ по прокладке инженерных коммуникаций, строительству подземных сооружений, возведению объектов энергетики и связи, мостов, шумозащитных экранов, водопропускных сооружений, складские комплексы, здания промышленного и гражданского назначения
+                        
+                        Основой политики нашей компании является постоянное увеличение доли выполняемых ею работ на рынке, реализации эффективных проектов государственного и коммерческого строительства, расширение ассортимента предложения выполняемых работ в сфере строительства и реконструкции, с дальнейшем расширением географии выполняемых работ.
+                        
+                        Мы считаем важным и необходимым, не только применять отработанные технологии, но и стремится внедрять и использовать самые современные технологии и методы строительства для максимального удовлетворения всех специфических потребностей каждого заказчика и эксплуатирующих организаций.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-0 col-sm-8 offset-sm-2">
+                <img src={% static "images/info-stroyka-second-photo.jpg" %} alt="" width="100%" >
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <div class="text">
+                    <p><h2>Наши партнёры</h2></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="text">
+                    <p><h4><a class="nav_p_link" href="https://utilmusor.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk&utm_content=gid%7C5168140104%7Caid%7C14336053136%7C44120452705_44120452705&utm_term=%D0%92%D1%8B%D0%B2%D0%BE%D0%B7%20%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%B0%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%B8%20%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8&callibri=yd_c%3A85956178_gb%3A5168140104_ad%3A14336053136_ph%3A44120452705_st%3Asearch_s%3Anone_dt%3Adesktop&etext=2202.2fFIXdPr1JTUGhGuifFSDZkrVgaqZdVNHynEpyBKNwm_rggcb-R5HiiEHcLK6LGK-jr6_g6plQdixKfqTV_0OLzKMP_WRthB07KxzD2M_RY12Ijo6S1EIloSmVrzy41V4Tm1I9Vm9NPiviPEUHXlymJsaWNlaWxnaGx4b3BscnU.b73aeaad209f0d1811286166418901c49ad99e77&yclid=5703546278228335066">Компания по вывозу мусора "UtilMusor"</a></h4></p>
+                    <p>Вывоз строительного и бытового мусора в контейнерах – это ведущее направление деятельности компании «Утильмусор». Воспользовавшись нашими услугами, вы сможете избавиться от бытовых и строительных отходов в соответствии с действующими законами и при этом сохранить чистоту на стройплощадке, около дома, склада, магазина. Мы имеем договора со всеми легальными полигонами по приему мусора и предлагаем контейнеры различного объема от 8 до 32 м³. Вывоз осуществляется в любое удобное время по согласованию с заказчиком. </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-0 col-sm-8 offset-sm-2">
+                <img src={% static "images/UtilMusor.png" %} alt="UtilMusor" width="40%" class="image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 col-sm-12">
+                <div class="text_under">
+                    <p><h5>Контактная информация:</h5></p>
+                    <p><a class = "nav_tel_link" href="tel: +79104108877">+7(495)-786-43-67</a> (WhatsApp, Telegram)</p>
+                    <p>gorizont-company@outlook.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1 col-sm-12">
+                <div class="text_under">
+                    <p><h5>Юридический адрес</h5></p>
+                    <p>Москва, 109429, Большая Спасская улица, д 35</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="top"></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        function ToTop(){
+            let button = $('.top');
+            $(window).on('scroll', () => {
+                if ($(this).scrollTop() >= 70){
+                    button.fadeIn();
+                } else {
+                    button.fadeOut();
+                }
+            });
+
+            button.on('click', (e) => {
+                e.preventDefault();
+                $('html').animate({scrollTop: 0}, 100);
+            })
+        }
+        ToTop();
+    </script>
+
+
+</body>
+{% endblock %}
